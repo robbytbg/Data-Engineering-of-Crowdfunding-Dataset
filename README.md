@@ -6,7 +6,7 @@
 2. Utilizing the Quick Database Diagram, **Open SQL Script from** 
   - I utilized the `CREATE TABLE} commands and foreign key relationships included in the SQL script that Quick Database Diagram created.
 
-![alt text](https://github.com/robbytbg/Port2/blob/main/Data%20Engineering(ETL)/Etl.PNG)
+![alt text](https://github.com/robbytbg/Data-Engineering-of-Crowdfunding-Dataset/blob/main/Etl.PNG)
 
 3. **Execute SQL Script:** 
   - To build the required tables and relationships in my chosen database, I ran the SQL script in MySQL Workbench.
@@ -97,7 +97,7 @@ REFERENCES `Sub_category` (`sub_category_id`);
         SELECT * FROM porto.campaign WHERE launched_at > '2021-01-01' LIMIT 5;
         ```
     
-      ![alt text](https://github.com/robbytbg/Port2/blob/main/Data%20Engineering(ETL)/Others/DB_OP.PNG)
+      ![alt text](https://github.com/robbytbg/Data-Engineering-of-Crowdfunding-Dataset/blob/main/Others/DB_OP.PNG)
 
   - Aggregate Functions to Get Insights:
     
@@ -111,7 +111,7 @@ REFERENCES `Sub_category` (`sub_category_id`);
 
         ```
 
-        ![alt text](https://github.com/robbytbg/Port2/blob/main/Data%20Engineering(ETL)/Others/DB_OP2.PNG)
+        ![alt text](https://github.com/robbytbg/Data-Engineering-of-Crowdfunding-Dataset/blob/main/Others/DB_OP2.PNG)
 
 
   - Join Tables to Retrieve Detailed Information:
@@ -140,7 +140,7 @@ REFERENCES `Sub_category` (`sub_category_id`);
 
       ```
 
-      ![alt text](https://github.com/robbytbg/Port2/blob/main/Data%20Engineering(ETL)/Others/DB_OP3.PNG)
+      ![alt text](https://github.com/robbytbg/Data-Engineering-of-Crowdfunding-Dataset/blob/main/Others/DB_OP3.PNG)
 
 # Code Side
 1. Adding Data for Crowdfunding:
@@ -219,7 +219,7 @@ for i, row in contact.iterrows():
     dict_values.append(row_values)
 ```
 
-12. Making a New DataFrame for Contacts:
+8. Making a New DataFrame for Contacts:
 
   - From the collected JSON data, a new DataFrame (new_contact) is generated with columns for "contact_id," "name," and "email."
 
@@ -227,7 +227,7 @@ for i, row in contact.iterrows():
 new_contact = pd.DataFrame(dict_values, columns=['contact_id', 'name', 'email'])
 ```
 
-13. dividing a name into its first and last digits:
+9. dividing a name into its first and last digits:
 
   - The original 'name' column is dropped and split into 'first_name' and 'last_name'.
 
