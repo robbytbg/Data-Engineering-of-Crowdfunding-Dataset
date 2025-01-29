@@ -1,4 +1,4 @@
-# DB Side
+# Database Side
 
 1. **Select a Database:** 
   - I've made sure to choose the database from which I wish to import the information. Using the "Navigator" panel, I completed this.
